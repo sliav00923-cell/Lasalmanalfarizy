@@ -6,26 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="pil"></div>
     <div class="nabar">
         <div class="hero">
           <div class="babl1">
       <div class="cv11">
-        <a href="bab_1.html">
+        <a href="bab_1.html" class="new">
           <p class="opal1">BAB_1</p>
         </a>
       </div>
       <div class="babl21">
-        <a href="bab_2.html">
+        <a href="bab_2.html" class="new">
           <p class="opal1">BAB_2</p>
         </a>
       </div>
       <div class="babl31">
-        <a href="bab_3.html">
+        <a href="bab_3.html" class="new">
           <p class="opal1">BAB_3</p>
         </a>
       </div>
       <div class="babl41">
-        <a href="index.html">
+        <a href="index.html" class="new">
           <p class="opal1">COVER</p>
         </a>
       </div>
@@ -34,6 +35,17 @@
         <button class="to1" onclick="it(0)"><P class="ikimas">HALAMAN_11</P></button>
          <button class="to1" onclick="it(1)"><P class="ikimas">HALAMAN_12</P></button>
           <button class="to1" onclick="it(2)"><P class="ikimas">HALAMAN_13</P></button>
+        </div>
+         <div class="pppl11">
+        <div class="ppl11">
+            <div class="ppcl111">
+                <img src="iot.jpg" alt="istar otomasi teknologi">
+            </div>
+            <div class="ppcl211">
+                <img src="imagine.jpg" alt="n4">
+            </div>
+        </div> 
+        </div>  
         </div>
        <div class="aprilfools">
         <div class="ppp11">
@@ -47,7 +59,6 @@
         </div> 
         </div> 
         </div> 
-        </div>
     </div>
     
     <div class="mp">
@@ -82,7 +93,6 @@
                     <p class="tz">11</p>
                 </div>
             </div>
-        
             <div class="slide2">
                 <div class="islide2">
                     <br>
@@ -188,16 +198,9 @@
     <script>
         function it(index){
           const slideaway = document.getElementById("mybe");
-        if (window.innerWidth <= 760){
-           const tinggi = slideaway.clientHeight
-           slideaway.style.transform = `translateY(-${index * tinggi}px)`; 
-        }
-        else {
             const haia = slideaway.clientWidth
             slideaway.style.transform = `translateX(-${index * haia}px)`;
-        }
-        }
-       
+        }       
     </script>
     <style>
         @keyframes scroll{
@@ -210,6 +213,13 @@
         }
     </style>
     <style>
+        html, body{
+  margin:0;
+  padding:0;
+}
+        .pil{
+            margin-bottom: auto;
+        }
         .porp{
             width: 80%;
             height: 80%;
@@ -316,7 +326,7 @@
             position: fixed;
             background-color: rgb(64, 255, 64);
             box-shadow: 10px 0px 15px black;
-            z-index: 7;
+            z-index: 5;
             top: 0;
             left: 0;
         }
@@ -327,7 +337,7 @@
             justify-items: center;
         }
         .aprilfools{
-            width: 100%;
+           width: 100%;
             height: 100%;
             justify-items: center;
         }
@@ -362,6 +372,9 @@
         width: 80%;
         height: 20%;
       }
+      .new{
+        text-decoration: none;
+      }
       .opal1{
             font-family: 'Times New Roman';
             font-size: 12pt;
@@ -386,7 +399,7 @@
             color: white;
             padding: 0 10%;
         }
-         .ppp11{
+         .pppl11{
     width: 80%;
     height: 20%;
     background-color: white;
@@ -395,46 +408,46 @@
     justify-content: center;
     display: flex;
 }
-.pp11{
+.ppl11{
     height: 80%;
     width: 90%;
-    background-color: transparent;
+    background-color: yellow;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.ppc111{
+.ppcl111{
     width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ppc111 img{
+.ppcl111 img{
     width: 70%;
     height: auto;
     object-fit: contain;
     
 }
-.ppc211{
+.ppcl211{
 width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;}
-.ppc211 img{
+.ppcl211 img{
     width: 70%;
     height: auto;
     object-fit: contain;
     
 }
 .ovt{
-   width: 80%;
-   height: 45%;
-   justify-content: center;
-   display: flex;
-   flex-direction: column;
-   background-color: transparent;
- }
+            width: 80%;
+            height: 45%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+        }
     </style>
     <style>
         :root{
@@ -470,7 +483,7 @@ width: 45%;
             width: 80vw;
             height: 100vh;
             overflow: hidden;
-            background-color: transparent;
+            background-color: var(--gray12);
             margin-left: auto;
         }
         .slideaway{
@@ -521,56 +534,99 @@ width: 45%;
             height: 95%;
             border-radius: 15%;
             justify-items: center;
-            
             box-shadow: 10px 0px 15px black;
             background-color: var(--green222);
         }    
     </style>
     <style>
         @media (max-width: 760px){
+            html, body{
+  margin:0;
+  padding:0;
+}
+            .pil{
+                width: 100vw;
+                height: 20vh;
+            }
+            .body{
+                display: flex;
+                flex-direction: column;
+            }
             .nabar{
             width: 100vw;
             height: 20vh;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            justify-items: center;
+            display: flex;            
             position: fixed;
-            background-color: blue;
+            background-color: rgb(64, 255, 64);
             z-index: 7;
             top: 0;
             left: 0;
+             box-shadow: 0px 20px 15px black;
         }
          .babl1{
-        width: 80%;
-        height: 30%;
-        margin-top: 30px;
+        width: 95%;
+        height: 100%;
         align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-direction: row;
+        border-radius: 20% 0% 20% 0%;
         gap: 10px;
         background-color:rgba(7, 90, 7, 0.716);
       }
+      .pppl11{
+            background-color: transparent;
+            position: absolute;
+        }
+        .ppl11{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111 img{
+             opacity: 0;
+             position: absolute;
+        }
+        .ppcl211{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl211 img{
+           opacity: 0;
+           position: absolute;
+        }
       .cv11{
         background-color:var(--green112);
         width: 20%;
         height: 80%;
+        align-content: center;
+        border-radius: 20%;
       }
       .babl21{
         background-color:var(--green112);
         width: 20%;
         height: 80%;
+        align-content: center;
+        border-radius: 20%;
       }
       .babl31{
         background-color: var(--green112);
         width: 20%;
         height: 80%;
+        align-content: center;
+        border-radius: 20%;
       }
       .babl41{
         background-color: var(--green112);
-        
         width: 20%;
         height: 80%;
+        align-content: center;
+        border-radius: 20%;
       }
       .opal1{
             font-family: 'Times New Roman';
@@ -584,6 +640,9 @@ width: 45%;
         outline: none;
         box-shadow: none;
         margin-right: 10px;
+        opacity: 0;
+        position: absolute;
+        z-index: -10;
         cursor: pointer;
 
       }
@@ -593,12 +652,11 @@ width: 45%;
             text-align: center;
             line-height: 1.5;
             color: white;
-            padding: 0 10%;
         }
          .ppp11{
-    width: 20%;
-    height: 80%;
-    background-color: black;
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -606,9 +664,10 @@ width: 45%;
 .pp11{
     height: 80%;
     width: 90%;
-    background-color: yellow;
+    background-color: white;
     display: flex; 
     flex-direction: column;
+    border-radius: 20%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -628,7 +687,8 @@ width: 45%;
 height: 45%;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+}
 .ppc211 img{
     width: auto;
     height: 70%;
@@ -639,70 +699,79 @@ height: 45%;
    width: 80%;
    height: 45%;
    justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
    display: flex;
    flex-direction: row;
-   background-color: gray;
+   background-color: transparent;
 }
 .hero{
-    width: 100vw;
+    width: 80vw;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: transparent;
 }
 .aprilfools{
-    margin-right: auto;
-    width: fit-content;
+    width: 20vw;
     height: 100%;
     display: flex;
+    background-color: transparent;
     flex-direction: column;
-}
-            .mp{
+} 
+           .mp{
             width: 100vw;
-            height: 80vh;
-            overflow: hidden;
-            background-color: transparent;
+            overflow: visible;
+            background-color: var(--gray12);
+            justify-items: center;
             margin-bottom: 0px;
         }
         .slideaway{
             width: 100%;
-            height: 100%;
+            height: fit-content;
             display: flex;
             transition: transform 0.5s ease;
-            flex-direction: row;
-            background-color: transparent;
+            flex-direction: column;
+            background-color: var(--gray12);
         }
           .slideaway > div{
             flex: 0 0 100%;
         }
         .slide1{
             height: fit-content;
-            background-color: orange;
+            background-color: var(--gray12);
+            margin-top: auto;
+            margin-bottom: auto;
             justify-items: center;
             align-content: center;
         }
         .islide1{
             width: 80%;
-            height: 95%;
+            height: fit-content;
             border-radius: 15%;
             box-shadow: 10px 0px 15px black;
             background-color: var(--green222);
         }
         .slide2{
-            height: 100%;
-            background-color: rosybrown;
+            height: fit-content;
+            background-color: var(--gray12);
+            margin-top: 30vh;
             justify-items: center;
             align-content: center;
         }
         .islide2{
             width: 80%;
-            height: 95%;
+            height: fit-content;
             border-radius: 15%;
             box-shadow: 10px 0px 15px black;
             background-color: var(--green222);
         }
         .slide3{
-            height: 100%;
-            background-color: yellow;
+            min-height: 80vh;
+            background-color: var(--gray12);
+            margin-top: 30vh;
             justify-items: center;
             align-content: center;
         }
@@ -711,7 +780,6 @@ height: 45%;
             height: 95%;
             border-radius: 15%;
             justify-items: center;
-            
             box-shadow: 10px 0px 15px black;
             background-color: var(--green222);
         }    
