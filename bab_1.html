@@ -8,7 +8,9 @@
 </head>
 
 <body>
+  <div class="pil"></div>
   <div class="navbarb1">
+    <div class="hero">
     <div class="babl">
       <div class="cv1">
         <a href="index.html">
@@ -39,6 +41,18 @@
         <p class="opi">HALAMAN 2</p>
       </button>
     </div>
+     <div class="pppl11">
+        <div class="ppl11">
+            <div class="ppcl111">
+                <img src="iot.jpg" alt="istar otomasi teknologi">
+            </div>
+            <div class="ppcl211">
+                <img src="imagine.jpg" alt="n4">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="S">
      <div class="ppp1">
         <div class="pp1">
             <div class="ppc11">
@@ -49,6 +63,7 @@
             </div>
         </div> 
         </div>  
+    </div>
   </div>
   <div class="pg">
     <div class="so" id="soso">
@@ -146,6 +161,10 @@
     }
   </script>
     <style>
+      html, body{
+  margin:0;
+  padding:0;
+}
       :root{
         --green11: #58B433;
         --green22: #468C28;
@@ -159,6 +178,59 @@
         font-size: 12pt;
         color: white;
       }
+           .hero{
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            justify-items: center;
+        }
+         .S{
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            justify-items: center;
+        }
+         .pppl11{
+            width: 80%;
+    height: 20%;
+    background-color: white;
+    border-radius: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+        }
+       .ppl11{
+    height: 80%;
+    width: 90%;
+    background-color: yellow;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ppcl111{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppcl111 img{
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    
+}
+.ppcl211{
+width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.ppcl211 img{
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    
+}
 
       .navbarb1 {
         width: 20vw;
@@ -332,7 +404,6 @@ width: 45%;
         color: white;
         line-height: 1.5;
         text-align: left;
-        padding: 0 30px;
       }
 
       .optop {
@@ -360,7 +431,235 @@ width: 45%;
       .ss{
         width: 40%;
         height: 100%;
+        background-color: red;
+       
+      }
+      .hs{
+        width: 40%;
+        height: 100%;
+        background-color: blue;
+        
+      }
+      .atp{
+        width: 20%;
+        height: 100%;
         background-color: transparent;
+      }
+    </style>
+    <style>
+      @media(max-width: 760px){
+        .pil{
+                width: 100vw;
+                height: 20vh;
+            }
+             .hero{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+ html, body{
+  margin:0;
+  padding:0;
+}
+ .S{
+            width: 20vw;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+        }
+        .navbarb1 {
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        box-shadow: 0px 20px 15px black;
+        background-color: rgb(64, 255, 64);
+      }
+      .babl{
+        width: 95%;
+        height: 60%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20% 0% 20% 0%;
+        gap: 10px;
+        background-color:rgba(7, 90, 7, 0.716);
+      }
+      .cv1{
+        background-color:var(--green11);
+          width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl2{
+        background-color:var(--green11);
+          width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl3{
+        background-color: var(--green11);
+           width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl4{
+        background-color: var(--green11);
+        width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .pppl11{
+            background-color: transparent;
+            position: absolute;
+        }
+        .ppl11{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111 img{
+            position: absolute;
+             opacity: 0;
+        }
+        .ppcl211{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl211 img{
+            position: absolute;
+           opacity: 0;
+        }
+         .ppp1{
+      width: 80%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.pp1{
+   height: 80%;
+    width: 90%;
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+.ppc11{
+     height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc11 img{
+    width: auto;
+    height: 70%;
+    object-fit: contain;
+    
+}
+.ppc21{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc21 img{
+    height: auto;
+    width: 70%;
+    object-fit: contain;
+}
+                .temto{
+            opacity: 0;
+            position: absolute;
+            z-index: -10;
+        }
+         .pg {
+        width: 100vw;
+        height: 80vh;
+        align-items: center;
+        overflow: visible;
+        margin-left: auto;
+        background-color: var(--gray1);
+      }
+      .so{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: #505050;
+        transition: transform 0.5s ease;
+      }
+
+      .so>div {
+        flex: 0 0 100%;
+      }
+
+      .pg1 {
+        height: 90%;
+        background-color: var(--gray1);
+        justify-content: center;
+        justify-items: center;
+
+      }
+
+      .pgs1 {
+        width: 80%;
+        height: 95%;
+        border-radius: 15%;
+        box-shadow:15px 0px 20px black;
+        background-color: var(--green22);
+
+      }
+      .pg2 {
+        margin-top: 30vw;
+        width: fit-content;
+        height: 90%;
+        background-color: var(--gray1);
+        align-content: center;
+        justify-items: center;
+
+      }
+      .pgs2 {
+        width: 80%;
+        height: 95%;
+        border-radius: 15%;
+        box-shadow:15px 0px 20px black;
+        background-color: var(--green22);
+
+      }
+      .ss{
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        z-index: 5;
        
       }
       .hs{
@@ -369,13 +668,8 @@ width: 45%;
         background-color: transparent;
         
       }
-      .atp{
-        width: 20%;
-        height: 100%;
-        background-color: transparent;
+
       }
-      
-      
     </style>
 </body>
 
