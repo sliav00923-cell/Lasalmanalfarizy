@@ -6,25 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar2">
+    <div class="pil"></div>
+    <div class="navbar2" class="new">
+        <div class="ft">
         <div class="babl1">
       <div class="cv11">
-        <a href="bab_1.html">
+        <a href="bab_1.html" class="new">
           <p class="opal1">BAB_1</p>
         </a>
       </div>
       <div class="babl21">
-        <a href="bab_2.html">
+        <a href="bab_2.html" class="new">
           <p class="opal1">BAB_2</p>
         </a>
       </div>
       <div class="babl31">
-        <a href="index.html">
+        <a href="index.html" class="new">
           <p class="opal1">COVER</p>
         </a>
       </div>
       <div class="babl41">
-        <a href="bab_4.html">
+        <a href="bab_4.html" class="new">
           <p class="opal1">BAB_4</p>
         </a>
       </div>
@@ -36,16 +38,29 @@
           <button class="to1" onclick="ia(3)"><p class="ikimas">HALAMAN_9</p></button>
           <button class="to1" onclick="ia(4)"><p class="ikimas">HALAMAN_10</p></button>
         </div>
+         <div class="pppl11">
+        <div class="ppl11">
+            <div class="ppcl111">
+                <img src="iot.jpg" alt="istar otomasi teknologi">
+            </div>
+            <div class="ppcl211">
+                <img src="imagine.jpg" alt="n4">
+            </div>
+        </div> 
+        </div>  
+        </div>
+        <div class="S">
         <div class="ppp11">
         <div class="pp11">
             <div class="ppc111">
                 <img src="iot.jpg" alt="istar otomasi teknologi">
             </div>
-            <div class="ppc211">
+            <div class="ppc2111">
                 <img src="imagine.jpg" alt="n4">
             </div>
         </div> 
         </div>  
+        </div>
     </div>
     <div class="mainpg">
         <div class="slp" id="slep">
@@ -247,6 +262,10 @@
         }
     </script>
     <style>
+        html, body{
+  margin:0;
+  padding:0;
+}
         .add{
             width: 100%;
             height: 20%;
@@ -273,8 +292,8 @@
             margin-left:auto ;
         }
         .lp{
-            width: 100%;
-            height: 80%;
+            width: 35vw;
+            height: auto;
         }
         .lp img{
             width: 80%;
@@ -420,6 +439,17 @@
         gap: 10px;
         background-color:rgba(7, 90, 7, 0.716);
       }
+       .S{
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            justify-items: center;
+        }
+        .ft{
+            width: 100%;
+            height: 100%;
+            justify-items: center;
+        }
       .cv11{
         background-color:var(--green112);
         width: 80%;
@@ -447,6 +477,7 @@
             text-align: center;
             line-height: 1.5;
             color: white;
+            text-decoration: none;
             padding: 0 10%;
       }
       .to1{
@@ -465,8 +496,8 @@
             color: white;
             padding: 0 10%;
         }
-         .ppp11{
-    width: 80%;
+         .pppl11{
+width: 80%;
     height: 20%;
     background-color: white;
     border-radius: 20%;
@@ -474,33 +505,33 @@
     justify-content: center;
     display: flex;
 }
-.pp11{
+.ppl11{
     height: 80%;
     width: 90%;
-    background-color: transparent;
+    background-color: yellow;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.ppc111{
+.ppcl111{
     width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ppc111 img{
+.ppcl111 img{
     width: 70%;
     height: auto;
     object-fit: contain;
     
 }
-.ppc211{
+.ppcl211{
 width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;}
-.ppc211 img{
+.ppcl211 img{
     width: 70%;
     height: auto;
     object-fit: contain;
@@ -514,6 +545,299 @@ width: 45%;
             flex-direction: column;
             background-color: transparent;
         }
+    </style>
+    <style>
+    @media (max-width: 760px){
+        html, body{
+  margin:0;
+  padding:0;
+}
+         .pil{
+                width: 100vw;
+                height: 20vh;
+            }
+         .mainpg{
+            width: 100vw;
+            height: fit-content;
+            overflow: visible;
+            justify-content: center;
+            background-color: var(--gray12);
+            margin-left: auto;
+        }
+    .navbar2{
+            width: 100vw;
+            height: 20vh;
+            justify-items: center;
+            display: flex;
+            z-index: 9;
+            position: fixed;
+            box-shadow: 0px 20px 15px black;
+            background-color: rgb(64, 255, 64);
+            top: 0;
+            left: 0;
+        }
+        .pppl11{
+            background-color: transparent;
+            position: absolute;
+        }
+        .ppl11{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111 img{
+            position: absolute;
+             opacity: 0;
+        }
+        .ppcl211{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl211 img{
+            position: absolute;
+           opacity: 0;
+        }
+        .ft{
+            width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: transparent;
+        }
+        .S{
+            width: 20vw;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+        }
+         .babl1{
+        width: 95%;
+        height: 60%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20% 0% 20% 0%;
+        gap: 10px;
+        background-color:rgba(7, 90, 7, 0.716);
+      }
+      .cv11{
+         background-color: var(--green112);
+        width: 20%;
+        height: 80%;
+        align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl21{
+         background-color: var(--green112);
+        width: 20%;
+        height: 80%;
+        align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl31{
+        background-color: var(--green112);
+        width: 20%;
+        height: 80%;
+        align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl41{
+        background-color: var(--green112);
+        width: 20%;
+        height: 80%;
+        align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .opal1{
+            font-family: 'Times New Roman';
+            font-size: 12pt;
+            text-align: center;
+            line-height: 1.5;
+            color: white;
+            padding: 0 10%;
+      }
+      .new{
+        text-decoration: none;
+      }
+      .to1{
+        outline: none;
+        box-shadow: none;
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        background-color: rgb(94, 89, 89);
+
+      }
+       .ikimas{
+            font-family: 'Times New Roman';
+            font-size: 8pt;
+            text-align: center;
+            line-height: 1.5;
+            color: white;
+        }
+         .ppp11{
+      width: 80%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.pp11{
+   height: 80%;
+    width: 90%;
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+.ppc111{
+     height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc111 img{
+    width: auto;
+    height: 70%;
+    object-fit: contain;
+    
+}
+.ppc2111{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc2111 img{
+    height: auto;
+    width: 125%;
+    object-fit: contain;
+}
+.ovt{
+            width: 70%;
+            height: 80%;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+        }
+        .slp{
+        width: 100vw;
+        height: fit-content;
+        transition: transform 0.5s ease;   
+        display: flex;
+        background-color: var(--gray12);
+        flex-direction: column;
+    }
+    .slp > div{
+        flex: 0 0 100%;
+    }
+        .mainpg{
+            width: 100vw;
+            height: 80vh;
+            overflow: visible;
+            justify-content: center;
+            background-color: var(--gray12);
+            margin-right: auto;
+        }
+        .lembarslide{
+            height: fit-content;
+            align-content: center;
+            justify-items: center;
+            background-color: var(--gray12);
+        }
+        .lembarslide2{
+            margin-top: 30vh;
+           height: fit-content;
+            align-content: center;
+            justify-items: center;
+            background-color: var(--gray12);
+        }
+        .lembarslide3{
+            height: fit-content;
+            margin-top: 30vh;
+            align-content: center;
+            justify-items: center;
+            background-color: var(--gray12);
+        }
+        .lembarslide4{
+            height: fit-content;
+            margin-top: 30vh;
+            align-content: center;
+            justify-items: center;
+            background-color:var(--gray12);
+        }
+        .lembarslide5{
+            height: fit-content;
+            margin-top: 30vh;
+            align-content: center;
+            justify-items: center;
+            background-color:transparent;
+        }
+         .ilembar1{
+            width: 80%;
+           height: fit-content;
+            background-color: var(--green222);
+            border-radius: 15%;
+            box-shadow: 10px 0px 15px black;
+        }
+        .ilembar2{
+         width: 80%;
+         height: fit-content;
+         background-color: var(--green222);
+         border-radius: 15%;
+         box-shadow: 10px 0px 15px black;
+        }
+        .ilembar3{
+         width: 80%;
+         height: fit-content;
+         background-color: var(--green222);
+         border-radius: 15%;
+         box-shadow: 10px 0px 15px black;
+        }
+        .ilembar4{
+         width: 80%;
+         height: fit-content;
+         background-color: var(--green222); 
+         border-radius: 15%;
+         box-shadow: 10px 0px 15px black;
+        }
+        .ilembar5{
+         width: 80%;
+         height: fit-content;
+         background-color: var(--green222); 
+         border-radius: 15%;
+         box-shadow: 10px 0px 15px black;
+        }
+        .lp{
+            width: 70vw;
+            height: auto;
+            background-color: yellow;
+        }
+        .lp img{
+            width: 80%;
+            height: auto;
+        }
+} 
     </style>
 </body>
 </html>
