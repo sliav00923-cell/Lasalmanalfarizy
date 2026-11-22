@@ -6,25 +6,27 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="pil"></div>
     <div class="navbar">
+        <div class="hero">
             <div class="babl1">
       <div class="cv11">
-        <a href="bab_1.html">
+        <a href="bab_1.html" class="new">
           <p class="opal1">BAB_1</p>
         </a>
       </div>
       <div class="babl21">
-        <a href="index.html">
+        <a href="index.html" class="new">
           <p class="opal1">COVER</p>
         </a>
       </div>
       <div class="babl31">
-        <a href="bab_3.html">
+        <a href="bab_3.html" class="new">
           <p class="opal1">BAB_3</p>
         </a>
       </div>
       <div class="babl41">
-        <a href="bab_4.html">
+        <a href="bab_4.html" class="new">
           <p class="opal1">BAB_4</p>
         </a>
       </div>
@@ -34,6 +36,18 @@
          <button class="to1" onclick="i(1)"><P class="ikimas">HALAMAN_4</P></button>
           <button class="to1" onclick="i(2)"><P class="ikimas">HALAMAN_5</P></button>
         </div>
+        <div class="pppl11">
+        <div class="ppl11">
+            <div class="ppcl111">
+                <img src="iot.jpg" alt="istar otomasi teknologi">
+            </div>
+            <div class="ppcl211">
+                <img src="imagine.jpg" alt="n4">
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="S">
         <div class="ppp11">
         <div class="pp11">
             <div class="ppc111">
@@ -44,6 +58,7 @@
             </div>
         </div> 
         </div>  
+        </div>
     </div>
     <script>
         function i(index){
@@ -139,6 +154,9 @@
         </div>
         <div class="p3">
             <div class="p33">
+                <br>
+                <br>
+                <br>
                 <ol type="a" start="2">
                      <li class="iki">Manfaat bagi instansi/perusahaan
                             <ul>
@@ -164,9 +182,6 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
                 <p class="app">
                     5
                 </p>
@@ -175,6 +190,29 @@
     </div>
     </div>
     <style>
+        html, body{
+  margin:0;
+  padding:0;
+}
+        .body{
+            background-color: #505050;
+        }
+        .new{
+            text-decoration: none;
+        }
+             .hero{
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            justify-items: center;
+        }
+         .S{
+            width: 100%;
+            height: 100%;
+            align-content: center;
+            justify-items: center;
+        }
+        
         :root{
         --green111: #58B433;
         --green222: #468C28;
@@ -274,42 +312,42 @@
             color: white;
             padding: 0 10%;
         }
-         .ppp11{
-    width: 80%;
+        .pppl11{
+            width: 80%;
     height: 20%;
     background-color: white;
-    align-items: center;
     border-radius: 20%;
+    align-items: center;
     justify-content: center;
     display: flex;
-}
-.pp11{
+        }
+       .ppl11{
     height: 80%;
     width: 90%;
-    background-color: transparent;
+    background-color: yellow;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-.ppc111{
+.ppcl111{
     width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ppc111 img{
+.ppcl111 img{
     width: 70%;
     height: auto;
     object-fit: contain;
     
 }
-.ppc211{
+.ppcl211{
 width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;}
-.ppc211 img{
+.ppcl211 img{
     width: 70%;
     height: auto;
     object-fit: contain;
@@ -370,7 +408,7 @@ width: 45%;
             background-color: transparent;
         }
         .p11{
-            border-radius: 15px;
+            border-radius: 15%;
             width: 80%;
             height: 100%;
             justify-content: center;
@@ -379,20 +417,235 @@ width: 45%;
             box-shadow: 10px 0px 15px black;
         }
          .p22{
-            border-radius: 15px;
+            border-radius: 15%;
             width: 80%;
             height: 100%;
             background-color: var(--green222);
             box-shadow: 10px 0px 15px black;
         }
          .p33{
-            border-radius: 15px;
+            border-radius: 15%;
             width: 80%;
             height: 100%;
             background-color: var(--green222);
             box-shadow: 10px 0px 15px black;
         }
     </style>
+    <style>
+        @media(max-width: 760px){
+            html, body{
+  margin:0;
+  padding:0;
+}
+            .pil{
+                width: 100vw;
+                height: 20vh;
+            }
+            .S{
+            width: 20vw;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+        }
+        
+      .ppp11{
+      width: 80%;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.pp11{
+   height: 80%;
+    width: 90%;
+    background-color: white;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+.ppc111{
+     height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc111 img{
+    width: auto;
+    height: 70%;
+    object-fit: contain;
+    
+}
+.ppc211{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ppc211 img{
+    height: auto;
+    width: 70%;
+    object-fit: contain;
+}
+     .hero{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+            .navbar{
+            width: 100vw;
+            height: 20vh;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            position: fixed;
+            background-color: rgb(64, 255, 64);
+            box-shadow: 0px 20px 15px black;
+            z-index: 3;
+        }
+        .ovt{
+            opacity: 0;
+            position: absolute;
+            z-index: -10;
+        }
+        .babl1{
+        width: 95%;
+        height: 60%;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20% 0% 20% 0%;
+        gap: 10px;
+        background-color:rgba(7, 90, 7, 0.716);
+      }
+      .cv11{
+        background-color:var(--green111);
+          width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl21{
+        background-color:var(--green111);
+          width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl31{
+        background-color: var(--green111);
+           width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .babl41{
+        background-color: var(--green111);
+        width: 20%;
+        height: 80%;
+         align-content: center;
+        border-radius: 20%;
+        z-index: 9;
+      }
+      .pppl11{
+            background-color: transparent;
+            position: absolute;
+        }
+        .ppl11{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl111 img{
+            position: absolute;
+             opacity: 0;
+        }
+        .ppcl211{
+             background-color: transparent;
+             position: absolute;
+        }
+        .ppcl211 img{
+            position: absolute;
+           opacity: 0;
+        }
+       .hope{
+            width: 100vw;
+            height: 80vh;
+            overflow: visible;
+            align-content: center;
+            background-color: var(--gray11);
 
+             
+        }
+        .oall{
+            width: 100%;
+            height: fit-content;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--gray11);
+            transition: transform 0.5s ease;
+        }
+        .p1{
+            height: 80%;
+            justify-items: center;
+            background-color: transparent;
+        }
+        .p2{
+             margin-top: 30vh;
+            height: 80%;
+            justify-items: center;
+            background-color: transparent;
+        }
+        .p3{
+             margin-top: 30vh;
+            height: fit-content;
+            justify-items: center;
+            background-color: transparent;
+        }
+        .p11{
+            border-radius: 15%;
+            width: 80%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--green222);
+            box-shadow: 10px 0px 15px black;
+        }
+         .p22{
+            border-radius: 15%;
+            width: 80%;
+            height: 100%;
+            background-color: var(--green222);
+            box-shadow: 10px 0px 15px black;
+        }
+         .p33{
+            border-radius: 15%;
+            width: 80%;
+            height: 100%;
+            background-color: var(--green222);
+            box-shadow: 10px 0px 15px black;
+        }
+        }
+    </style>
 </body>
 </html>
